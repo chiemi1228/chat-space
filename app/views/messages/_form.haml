@@ -1,0 +1,9 @@
+.form
+    %form.input-message{:action => "#", :method => "post", :autocomplete => "on"}  
+    %input.input-message__text{:name => "input-message", :type => "text", :placeholder => "type a message"}
+        %label{:for => "message_image"}
+        %i.fa.fa-image
+        %input.input-image{:type => "file", :id => "message_image",}
+        
+    %a.send{:href => "#"}
+        .btn Send

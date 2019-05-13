@@ -1,0 +1,203 @@
+@import "./reset";
+@import "font-awesome";
+@import "./variable";
+/*
+ *= require font-awesome
+ */
+
+
+    .action-bar {
+        width: 100%;
+        z-index: 999;
+        position: fixed;
+        background-color: $skyblue;
+        color: white;
+        text-align: center;
+     }
+
+        .left-menu {
+            padding-top: 24px;
+            position: fixed;
+            width: 300px;
+            color: white;
+            height: 100%;
+         }
+
+            .left-header {
+                padding: 0 20px;
+                height: 100px;
+                background-color: $left-header;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 100px;
+         
+                &__user-name {
+                    float: left;
+                }
+             
+                .cog-pencil {
+                    float: right;
+                    line-height: 100px;
+                    margin-left: 3px;
+                    color: white;
+                    text-decoration: none;
+                }
+             }
+
+            .groups {
+                background-color: $left-groups;
+                height: calc(100% - 100px);
+                padding: 0 20px 0;
+            
+                .group-one {
+                    color: white;
+                    text-decoration: none;
+        
+                    &__group-name {
+                       size: 15px;
+                       padding: 20px 0 5px; 
+                    } 
+
+                    &__whats-new {
+                       font-size: 11px;
+                       margin-bottom: 20px; 
+                    }      
+                }
+             }
+
+        .chat-space {
+            padding-top: 24px;
+            position: absolute;left: 300px;
+            width: calc(100% - 300px);
+            height: 100%;
+            position: relative;
+         }   
+      
+            .chat-header {
+                position: fixed;
+                width: calc(100% - 380px);
+                padding: 0 40px;
+                margin-right: 80px;
+                height: 100px;
+                border-bottom: 1px solid $chat-header-border-bottom; 
+                background-color: white;
+
+                & a {
+                    display: block;
+                    float: right;
+                    height: 40px;
+                    width: 70px;
+                    margin-top: 28px;
+                    color: $color-skyblue;
+                    border: solid 1px $skyblue;
+                    text-decoration: none;
+                 }
+
+                &__edit-btn {
+                    line-height: 40px;
+                    margin: auto 20px;
+                 }
+             }
+      
+                .current-group {
+                    width: 152px;
+                    float: left;
+      
+                    &__name {
+                        margin-top: 35px;
+                        font-size: 20px;
+                        color: $current-group-name;
+                     }
+                 }
+
+                .member-name {
+                    padding: 15px 0 0;
+                    color: $current-group-member-name;
+                    font-size: 12px;
+
+                    &__one-name {
+                        display: inline-table;
+                        list-style: none;
+                     }
+                 }
+
+            .messages {
+                padding: 162px 40px 150px;
+                background-color: $chat-messages;
+                min-height: calc(100vh - 90px - 101px);
+             }
+            
+                .message {
+
+                    &__info {
+                        display: flex;
+                        padding-bottom: 10px;
+            
+                        &__who {
+                            font-size: 16px;
+                            color: $message-info-who;
+                            font-weight: bold;
+                         }
+
+                        &__when {
+                            font-size: 12px;
+                            color: $message-info-when;
+                            padding-left: 10px;
+                         }
+                     }
+
+                     &__text {
+                         font-size: 14px;
+                         color: $message-text;
+                         padding-bottom: 40px;
+                      }
+                 }
+
+            .form {
+                position: fixed;
+                background-color: $chat-form;
+                height: 50px;
+                bottom: 0;
+                width: calc(100vw - 380px);
+                padding: 20px 40px;   
+             }
+
+                .input-message {
+                    display: inline-block;
+                 
+                    &__text {              
+                        height: 50px;
+                        padding: 0 40px 0 10px;
+                        width : calc(100vw - 550px);
+                        float: left;
+                     }
+                 }
+
+                        .fa-image {
+                           font-size: 20px;
+                           color: black;
+                           position: relative;
+                           right: 40px;
+                           top: 15px;
+                           cursor: pointer;
+                         }
+
+                        .input-image {
+                            display: none;                 
+                         }
+
+                     a.send {
+                         float: right;
+                         text-decoration: none;
+                         position: relative;
+                         bottom: 22px;
+                     }
+
+                         .btn {
+                             background-color: $skyblue;
+                             height:50px;
+                             width: 100px;
+                             color: white;
+                             line-height: 50px;
+                             text-align: center;
+                          }

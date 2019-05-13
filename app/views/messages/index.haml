@@ -1,0 +1,72 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title ChatSpaceProto
+  %body
+
+    .action-bar グループを作成しました
+
+    .wrapper
+
+      = render 'left-menu'
+
+      .chat-space
+        
+        .chat-header
+
+          .current-group
+            %h2.current-group__name samplegroup
+            %ul.member-name
+              %span.member-name__one-name Member：
+              %li.member-name__one-name chiemi
+              %li.member-name__one-name nozomi
+
+          %a{:href =>"#"}
+            .chat-header__edit-btn Edit
+
+        .messages
+
+          .message
+            
+            .message__info
+              %p.message__info__who chiemi
+              %p.message__info__when 2019/05/06(mon) 19:56:05   
+            %p.message__text こんにちわ
+            
+            .message__info
+              %p.message__info__who chiemi
+              %p.message__info__when 2019/05/06(mon) 19:56:05   
+            %p.message__text こんにちわ
+
+            .message__info
+              %p.message__info__who chiemi
+              %p.message__info__when 2019/05/06(mon) 19:56:05   
+            %p.message__text こんにちわ
+
+            .message__info
+              %p.message__info__who chiemi
+              %p.message__info__when 2019/05/06(mon) 19:56:05   
+            %p.message__text こんにちわ
+
+            .message__info
+              %p.message__info__who chiemi
+              %p.message__info__when 2019/05/06(mon) 19:56:05   
+            %p.message__text こんにちわ
+
+            .message__info
+              %p.message__info__who chiemi
+              %p.message__info__when 2019/05/06(mon) 19:56:05   
+            %p.message__text こんにちわ
+
+            .message__info
+              %p.message__info__who chiemi
+              %p.message__info__when 2019/05/06(mon) 19:56:05   
+            %p.message__text こんにちわ
+
+            .message__info
+              %p.message__info__who chiemi
+              %p.message__info__when 2019/05/06(mon) 19:56:05   
+            %p.message__text 万葉の湯で勉強すると、温泉の匂いで集中できることもあるが、鼻の粘膜からも、温泉成分が入って行くから、体にもいい万葉の湯で勉強すると、温泉の匂いで集中できることもあるが、鼻の粘膜からも、温泉成分が入って行くから、体にもいい
+
+        = render 'form'
