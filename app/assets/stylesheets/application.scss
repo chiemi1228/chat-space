@@ -33,7 +33,7 @@
          
                 &__user-name {
                     float: left;
-                }
+                 }
              
                 .cog-pencil {
                     float: right;
@@ -41,7 +41,7 @@
                     margin-left: 3px;
                     color: white;
                     text-decoration: none;
-                }
+                 }
              }
 
             .groups {
@@ -56,21 +56,20 @@
                     &__group-name {
                        size: 15px;
                        padding: 20px 0 5px; 
-                    } 
+                     }
 
                     &__whats-new {
                        font-size: 11px;
                        margin-bottom: 20px; 
-                    }      
-                }
+                     }
+                 }
              }
 
         .chat-space {
             padding-top: 24px;
-            position: absolute;left: 300px;
+            position: absolute; left: 300px;
             width: calc(100% - 300px);
             height: 100%;
-            position: relative;
          }   
       
             .chat-header {
@@ -88,7 +87,7 @@
                     height: 40px;
                     width: 70px;
                     margin-top: 28px;
-                    color: $color-skyblue;
+                    color: $skyblue;
                     border: solid 1px $skyblue;
                     text-decoration: none;
                  }
@@ -150,7 +149,7 @@
                          font-size: 14px;
                          color: $message-text;
                          padding-bottom: 40px;
-                      }
+                     }
                  }
 
             .form {
@@ -159,45 +158,56 @@
                 height: 50px;
                 bottom: 0;
                 width: calc(100vw - 380px);
-                padding: 20px 40px;   
+                padding: 20px 40px;
+               
              }
 
-                .input-message {
-                    display: inline-block;
-                 
-                    &__text {              
-                        height: 50px;
-                        padding: 0 40px 0 10px;
-                        width : calc(100vw - 550px);
-                        float: left;
+                .form__item {
+                    display: table;
+
+                    &__table {
+                        display: table-cell;
+                        box-sizing: border-box;
+
                      }
                  }
 
-                        .fa-image {
-                           font-size: 20px;
-                           color: black;
-                           position: relative;
-                           right: 40px;
-                           top: 15px;
-                           cursor: pointer;
-                         }
+                .input-message {
+
+                   
+                    &__text {
+                        height: 50px;
+                        padding: 0 40px 0 10px;
+                        width : calc(100vw - 500px);
+                        border:none;
+                     }
+                 }
 
                         .input-image {
-                            display: none;                 
+                            display: inline;
+                            position: absolute; top: 35px; right: 170px;
+
+                            .fa-image {
+                                font-size: 21px;
+                                color: black;
+                                cursor: pointer;
+                             }
+
+                                &__file {
+                                    display: none;
+                                 }
                          }
 
-                     a.send {
-                         float: right;
+                    a.send {
                          text-decoration: none;
-                         position: relative;
-                         bottom: 22px;
                      }
 
-                         .btn {
+                        .btn {
                              background-color: $skyblue;
                              height:50px;
                              width: 100px;
                              color: white;
                              line-height: 50px;
                              text-align: center;
-                          }
+                             margin-left: 15px;
+                         }
