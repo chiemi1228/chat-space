@@ -1,7 +1,7 @@
 @import "./reset";
 @import "font-awesome";
 @import "./variable";
-
+@import "modules/side_bar";
 @import "modules/user";
 @import "modules/group";
 @import "config/colors";
@@ -13,54 +13,7 @@
  */
 
 
-        .left-menu {
-            position: fixed;
-            width: 300px;
-            color: white;
-            height: 100%;
-         }
-
-            .left-header {
-                padding: 0 20px;
-                height: 100px;
-                background-color: $left-header;
-                font-size: 16px;
-                font-weight: bold;
-                line-height: 100px;
-         
-                &__user-name {
-                    float: left;
-                 }
-             
-                .cog-pencil {
-                    float: right;
-                    line-height: 100px;
-                    margin-left: 3px;
-                    color: white;
-                    text-decoration: none;
-                 }
-             }
-
-            .groups {
-                background-color: $left-groups;
-                height: calc(100% - 100px);
-                padding: 0 20px 0;
-            
-                .group-one {
-                    color: white;
-                    text-decoration: none;
         
-                    &__group-name {
-                       size: 15px;
-                       padding: 20px 0 5px; 
-                     }
-
-                    &__whats-new {
-                       font-size: 11px;
-                       margin-bottom: 20px; 
-                     }
-                 }
-             }
 
         .chat-space {
             position: absolute; left: 300px;
