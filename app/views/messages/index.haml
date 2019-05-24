@@ -7,21 +7,20 @@
 
     .wrapper
 
-      = render 'left-menu'
+      = render 'shared/side_bar'
 
       .chat-space
         
         .chat-header
 
           .current-group
-            %h2.current-group__name samplegroup
+            %h2.current-group__name
+              = @group.name
             %ul.member-name
-              %span.member-name__one-name Member：
-              %li.member-name__one-name chiemi
-              %li.member-name__one-name nozomi
-
-          %a{:href =>"#"}
-            .chat-header__edit-btn Edit
+              Member:
+              - @group.user_ids.each do |user_id|
+                = user_id.name
+          = link_to 'Edit', edit_group_path(@group), class: "chat-header__edit-btn"
 
         .messages
 
