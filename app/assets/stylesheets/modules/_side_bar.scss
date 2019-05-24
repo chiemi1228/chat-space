@@ -1,0 +1,51 @@
+.left-menu {
+    position: fixed;
+    width: 300px;
+    color: white;
+    height: 100%;
+ }
+
+    .left-header {
+        padding: 0 20px;
+        height: 100px;
+        background-color: $left-header;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 100px;
+ 
+        .header__name {
+            float: left;
+         }
+     
+        a {
+            float: right;
+            line-height: 100px;
+            margin-left: 3px;
+            color: white;
+            text-decoration: none;
+         }
+     }
+
+    .groups {
+        background-color: $left-groups;
+        height: calc(100% - 100px);
+        padding: 0 20px 0;
+
+        .group {
+            
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+            &__name {
+               size: 15px;
+               padding: 20px 0 5px; 
+             }
+
+            &__message {
+               font-size: 11px;
+               margin-bottom: 20px; 
+             }
+         }
+     }
