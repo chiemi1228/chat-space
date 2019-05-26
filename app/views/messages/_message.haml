@@ -1,0 +1,8 @@
+.message
+    .message__info
+        .message__info__who
+            = message.user.name
+        .message__info__when
+            = message.updated_at
+        .message__text
+            = message.content
