@@ -18,52 +18,11 @@
               = @group.name
             %ul.member-name
               Member:
-              - @group.user_ids.each do |user_id|
-                = user_id.name
+              - @group.group_users.each do |group_user|
+                = group_user.user.name
           = link_to 'Edit', edit_group_path(@group), class: "chat-header__edit-btn"
 
         .messages
-
-          .message
-            
-            .message__info
-              %p.message__info__who chiemi
-              %p.message__info__when 2019/05/06(mon) 19:56:05   
-            %p.message__text こんにちわ
-            
-            .message__info
-              %p.message__info__who chiemi
-              %p.message__info__when 2019/05/06(mon) 19:56:05   
-            %p.message__text こんにちわ
-
-            .message__info
-              %p.message__info__who chiemi
-              %p.message__info__when 2019/05/06(mon) 19:56:05   
-            %p.message__text こんにちわ
-
-            .message__info
-              %p.message__info__who chiemi
-              %p.message__info__when 2019/05/06(mon) 19:56:05   
-            %p.message__text こんにちわ
-
-            .message__info
-              %p.message__info__who chiemi
-              %p.message__info__when 2019/05/06(mon) 19:56:05   
-            %p.message__text こんにちわ
-
-            .message__info
-              %p.message__info__who chiemi
-              %p.message__info__when 2019/05/06(mon) 19:56:05   
-            %p.message__text こんにちわ
-
-            .message__info
-              %p.message__info__who chiemi
-              %p.message__info__when 2019/05/06(mon) 19:56:05   
-            %p.message__text こんにちわ
-
-            .message__info
-              %p.message__info__who chiemi
-              %p.message__info__when 2019/05/06(mon) 19:56:05   
-            %p.message__text 万葉の湯で勉強すると、温泉の匂いで集中できることもあるが、鼻の粘膜からも、温泉成分が入って行くから、体にもいい万葉の湯で勉強すると、温泉の匂いで集中できることもあるが、鼻の粘膜からも、温泉成分が入って行くから、体にもいい
+          = render @messages
 
         = render 'form'
