@@ -44,6 +44,7 @@
                 &__edit-btn {
                     line-height: 40px;
                     margin: auto 20px;
+                    text-align: center;
                  }
              }
       
@@ -70,7 +71,7 @@
                  }
 
             .messages {
-                padding: 162px 40px 150px;
+                padding: 150px 40px 150px;
                 background-color: $chat-messages;
                 min-height: calc(100vh - 90px - 101px);
              }
@@ -98,6 +99,7 @@
                          font-size: 14px;
                          color: $message-text;
                          padding-bottom: 40px;
+                         position: relative; right: 225px; top: 30px;
                      }
                  }
 
@@ -107,51 +109,34 @@
                 height: 50px;
                 bottom: 0;
                 width: calc(100vw - 380px);
-                padding: 20px 40px;
-               
+                padding: 20px 45px;
+                
              }
 
-                .form__item {
-                    display: table;
-
-                    &__table {
-                        display: table-cell;
-                        box-sizing: border-box;
-
-                     }
-                 }
-
                 .input-message {
-
-                   
-                    &__text {
-                        height: 50px;
-                        padding: 0 40px 0 10px;
-                        width : calc(100vw - 500px);
-                        border:none;
+                    padding: 0 40px 0 10px;
+                    float: left;
+                    width: calc(100vw - 550px);
+                    height: 50px;
+                    position: relative;
+                    border:solid 0px;
+                    &__img {
+                        border: none;
+                        position: absolute; right: 180px; bottom: 30px;
                      }
                  }
+                 .hidden {
+                    display: none;
+                 }
 
-                        .input-image {
-                            display: inline;
-                            position: absolute; top: 35px; right: 170px;
-
-                            .fa-image {
+                            .icon__picture-o {
                                 font-size: 21px;
                                 color: black;
                                 cursor: pointer;
+                                
                              }
 
-                                &__file {
-                                    display: none;
-                                 }
-                         }
-
-                    a.send {
-                         text-decoration: none;
-                     }
-
-                        .btn {
+                        .form__submit {
                              background-color: $skyblue;
                              height:50px;
                              width: 100px;
@@ -159,4 +144,5 @@
                              line-height: 50px;
                              text-align: center;
                              margin-left: 15px;
+                             float: right;
                        }

@@ -1,13 +1,8 @@
 .form
-    %form.input-message{action: "#", method: "post", autocomplete: "on"}  
-
+  = form_for [@group, @message] do |f|
+    = f.text_field :content, class: 'input-message', placeholder: 'type a message'
     .form__item
-        %input.input-message__text.form__item__table{name: "input-message", type: "text", placeholder: "type a message"}
-        
-            .input-image
-                %label.input-image__label{for: "message_image"}
-                    %i.fa.fa-image
-                    %input.input-image__file{type: "file", id: "message_image"}
-
-        %a.send.form__item__table{href: "#"}
-            .btn Send
+    = f.label :image, class: 'input-message__img' do
+      = f.file_field :image, class: 'hidden', id: "message_image"
+      = fa_icon 'picture-o', class: 'icon__picture-o'
+    = f.submit 'Send', class: 'form__submit'
