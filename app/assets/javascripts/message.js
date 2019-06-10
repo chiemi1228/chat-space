@@ -12,6 +12,7 @@ function buildHTML(message){
             </div>
             <div class="lower-message">
               <p class="lower-message__content">
+                ${message.content}
               </p>
               ${message_first}
             </div>
