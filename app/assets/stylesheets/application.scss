@@ -12,9 +12,6 @@
  *= require font-awesome
  */
 
-
-        
-
         .chat-space {
             position: absolute; left: 300px;
             width: calc(100% - 300px);
@@ -74,6 +71,7 @@
                 padding: 150px 40px 150px;
                 background-color: $chat-messages;
                 min-height: calc(100vh - 90px - 101px);
+                overflow: scroll;
              }
             
                 .message {
@@ -95,11 +93,10 @@
                          }
                      }
 
-                     &__text {
-                         font-size: 14px;
-                         color: $message-text;
-                         padding-bottom: 40px;
-                         position: relative; right: 225px; top: 30px;
+                    .lower-message{
+                        font-size: 14px;
+                        color: $message-text;
+                        padding-bottom: 40px;
                      }
                  }
 
