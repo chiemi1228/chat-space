@@ -1,0 +1,6 @@
+#chat-group-users
+  .chat-group-user.clearfix.js-chat-member{id: "chat-group-user-#{user.id}"}
+    %input{name: "group[user_ids][]", type: "hidden", value: "#{user.id}"}/
+    %p.chat-group-user__name #{user.name}
+    - unless user.id == current_user.id
+      .user-search-remove.chat-group-user__btn.js-remove-btn#chat-group-user__btn--remove 削除
