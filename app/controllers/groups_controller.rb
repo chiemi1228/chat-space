@@ -8,7 +8,7 @@ class GroupsController < ApplicationController
       @group = Group.new
       @group.users << current_user
     end
-  
+
     def create
       @group = Group.new(group_params)
       if @group.save
@@ -32,7 +32,7 @@ class GroupsController < ApplicationController
   
     private
     def group_params
-      params.require(:group).permit(:name, { :user_ids => [] } )
+      params.require(:group).permit(:name, { :user_ids => [] })
     end
 
     def set_group
