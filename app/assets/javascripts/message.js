@@ -37,7 +37,6 @@ $(function(){
         })
           .done(function(data){  //create.json.jbuilder　からのdata @message, created_at, user_name, id
             var html = buildMessageHTML(data);
-            console.log(data);
             $('.messages').append(html);
             $('html,body').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
             $('form')[0].reset();
