@@ -26,6 +26,10 @@
                 height: 100px;
                 border-bottom: 1px solid $chat-header-border-bottom; 
                 background-color: white;
+                
+                .current-group {
+                    width: auto;
+                }
 
                 & a {
                     display: block;

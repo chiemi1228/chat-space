@@ -77,6 +77,26 @@
     }
   }
 
+  .chat-group-user-search {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .chat-group-user-search__name {
+    display: inline-block;
+    line-height: 50px;
+    font-size: 14px;
+    padding: 0 15px;
+  }
+  
+  #chat-group-user__btn--add {
+    cursor: pointer;
+    float: right;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0 15px;
+  }
+
   .chat-group-user {
     padding: 0 15px;
     line-height: 50px;

@@ -1,7 +1,7 @@
 function buildHTML(user){   //user.id と user.name を貰う
     var html =
       `<div class="chat-group-user-search clearfix">
-         <p class="chat-group-user__name">${user.name}</p>
+         <p class="chat-group-user-search__name" >${user.name}</p>
          <div class="user-search-add chat-group-user__btn", id= "chat-group-user__btn--add" data-user-id= ${user.id} data-user-name=${user.name}>追加</div>
 　     </div>`
     return html;
@@ -45,7 +45,7 @@ function addUser(user_id, user_name) {
   var html = 
     `<div class="chat-group-user clearfix js-chat-member" id="chat-group-user-${user_id}">
        <input name="group[user_ids][]" type="hidden" value="${user_id}">
-       <p class="chat-group-user__name">${user_name}</p>
+       <p class="chat-group-user-search__name">${user_name}</p>
        <div class="user-search-remove chat-group-user__btn js-remove-btn', id="chat-group-user__btn--remove">削除</div>
        </div>`
 
