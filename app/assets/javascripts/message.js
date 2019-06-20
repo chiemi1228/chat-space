@@ -50,11 +50,11 @@ $(function(){
 
 //自動更新機能
 $(function() {
-    setInterval(reloadMessages, 30000);
+    setInterval(reloadMessages, 30000);  //30000 => 30秒
   }); 
   
     var reloadMessages = function() {
-      last_message_id = $(".message").last().data("message-id");  //更新前で、最新の.message　の　id
+      last_message_id = $(".message").last().data("message-id");  //最新の.message　の　id
       var url = window.location.href;
       if (url.match(/\/groups\/\d+\/messages/)) { // /groups/:group_id/messages　の形であれば
 
